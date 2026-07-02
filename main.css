@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+header{
+    background-color: aqua;
+    grid-column: 1/3;
+}
+
+main{
+    background-color: blueviolet;
+    grid-column: 2/3;
+}
+
+aside{
+    background-color: red;
+    grid-column: 1/2;
+}

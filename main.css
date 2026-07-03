@@ -1,24 +1,15 @@
 body{
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 header{
-    background-color: aqua;
+    background-color: white;
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-}
-
-main{
-    background-color: blueviolet;
-    grid-column: 2/3;
-}
-
-aside{
-    background-color: red;
-    grid-column: 1/2;
 }
 
 input{
@@ -81,4 +72,28 @@ form{
 .action-buttons button{
     flex: 0 1 20%;
     height: 20px;
+}
+
+main{
+    background-color: blueviolet;
+    grid-column: 2/3;
+}
+
+aside{
+    background-color: rgb(81, 113, 243);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 4fr;
+}
+
+aside section{
+    padding-left: 10px;
+}
+
+aside section:last-of-type{
+    padding-top: 30px;
 }

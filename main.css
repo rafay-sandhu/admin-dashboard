@@ -74,11 +74,6 @@ form{
     height: 20px;
 }
 
-main{
-    background-color: blueviolet;
-    grid-column: 2/3;
-}
-
 aside{
     background-color: rgb(81, 113, 243);
     grid-column: 1/2;
@@ -96,4 +91,37 @@ aside section{
 
 aside section:last-of-type{
     padding-top: 30px;
+}
+
+main{
+    background-color: rgb(178, 181, 203);
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main article{
+    grid-column: 1;
+    background-color: aqua;
+}
+
+main nav{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 10px;
+}
+
+
+
+.announcements, .trending{
+    background-color: grey;
+    margin-right: 20px;
+}
+
+nav h2{
+    margin-bottom: 0;
+    margin-top: 50px;
 }

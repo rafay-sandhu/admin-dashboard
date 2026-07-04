@@ -1,6 +1,6 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1.3fr 5fr;
     grid-template-rows: 1fr 6fr;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -38,7 +38,7 @@ form{
 }
 
 #search-button{
-    background-image: url("SVGs and Photos/magnify.svg");
+    background-image: url("svgs-and-photos/header-icons/magnify.svg");
     background-size: 30px 30px;
     height: 30px;  
     width: 30px;
@@ -57,7 +57,7 @@ form{
 }
 
 .notifications-button{
-    background-image: url("SVGs and Photos/bell-ring.svg");
+    background-image: url("svgs-and-photos/header-icons/bell-ring.svg");
     height: 1.8rem;
     width: 1.8rem;
     border: none;
@@ -141,7 +141,7 @@ aside{
     font-weight: bold;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 4fr;
+    grid-template-rows:0.8fr 2.5fr 5fr;
 }
 
 aside section{
@@ -150,6 +150,32 @@ aside section{
 
 aside section:last-of-type{
     padding-top: 30px;
+}
+
+aside section div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+aside section:first-of-type div img{
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);;
+}
+
+.sidebar-options-1 div img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.sidebar-options-2 div img{
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 main{

@@ -1,13 +1,13 @@
 body{
     display: grid;
     grid-template-columns: 1.3fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: auto 1fr;
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
 
 .sidebar, main{
-    padding-bottom: 5rem;
+    padding-bottom: rem;
 }
 
 header{
@@ -183,7 +183,7 @@ main{
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
 }
 
 main article{
